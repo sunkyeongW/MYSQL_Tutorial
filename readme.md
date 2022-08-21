@@ -40,3 +40,16 @@
     VARCHAR(값) : 최대 글자 개수
     DATATIME : 날짜와 함꼐 시간까지 저장하는 타입
     PRIMARY KEY : 고유한 값을 지정.
+
+# MySQL의 CRUD
+    1. Create
+        INSERT INTO "테이블"("컬럼1","컬럼2",...) VALUES ("데이터1","데이터2", ...) : "테이블"의 특정 컬럼 입력
+    2. Read
+        SELECT "컬럼" FROM "테이블" : 테이블 안에 컬럼 목록을 출력.
+        SELECT "컬럼" FORM "테이블" WHERE "컬럼"="VALUES" : 컬럼 특정 값만 출력.
+        ORDER BY "컬럼" DESC : 큰 숫자 순으로 정렬.
+    3. Update
+        UPDATE "테이블" SET "컬럼"="수정할 값" WHERE id="id 값" : 컬럼 값 수정.
+    4. Delete
+        DELETE FROM "테이블" WHERE id="id 값" : 데이터 행 삭제
+
